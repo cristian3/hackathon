@@ -1,0 +1,12 @@
+version: '2'
+services:
+    hack-postgresql:
+        container_name: hack-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/hack/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=hack
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
